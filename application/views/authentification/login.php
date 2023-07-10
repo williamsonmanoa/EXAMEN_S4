@@ -7,22 +7,22 @@
     <title>Login</title>
 </head>
 <body>
-    <h3>Page de login</h3>
+    <h3>SIGN IN</h3>
     <form action=<?php echo base_url('authentification/verifyLogin') ?> method="post">
         <div>
-            <input type="email" name="email" placeholder="Votre email" id="email" value="sedera@gmail.com" required>
+            <input type="email" name="email" placeholder="Email here" id="email"  required>
             <label for="email" name="email_check"></label>
         </div>
         <div>
-            <input type="password" name="password" placeholder="Mot de passe" id="password" value="123" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
             <label for="password" name="password_check"></label>
         </div>
         <div>
-            <input type="submit" value="Connexion">
+            <input type="submit" value="Sign In">
         </div>
     </form>
     <div>
-        <p>Pas de compte? <a href=<?php echo base_url('authentification/inscription') ?>>Inscrivez-vous ici</a></p>
+        <p>or <a href=<?php echo base_url('authentification/inscription') ?>>Sign up here</a></p>
     </div>
 </body>
 </html>
@@ -62,7 +62,7 @@ input[type="submit"] {
   width: 100%;
   padding: 10px;
   margin: 10px;
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
@@ -70,7 +70,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: gray;
 }
 
 p {
